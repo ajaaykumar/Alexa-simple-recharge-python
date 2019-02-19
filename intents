@@ -1,0 +1,123 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "recharge application",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ProviderDetail",
+                    "slots": [
+                        {
+                            "name": "provider",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "my provider is {provider}",
+                        "{provider} provider",
+                        "provider {provider}",
+                        "{provider}"
+                    ]
+                },
+                {
+                    "name": "RechargeAmount",
+                    "slots": [
+                        {
+                            "name": "Amount",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{Amount} rupees only",
+                        "{Amount} rupees",
+                        "Amount is {Amount} rupees"
+                    ]
+                },
+                {
+                    "name": "BalanceDetails",
+                    "slots": [
+                        {
+                            "name": "balance",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "i want to check the balance {balance}",
+                        "want to check the balance {balance}",
+                        "how much is my balance {balance}",
+                        "what's my balance {balance}",
+                        "what is my balance {balance}",
+                        "my present balance is {balance}",
+                        "present balance is {balance}",
+                        "my existing balance is {balance}",
+                        "balance {balance}"
+                    ]
+                },
+                {
+                    "name": "Recharge",
+                    "slots": [],
+                    "samples": [
+                        "want to recharge",
+                        "want to do reacharge",
+                        "recharge",
+                        "i want to do recharge"
+                    ]
+                },
+                {
+                    "name": "MobileRecharge",
+                    "slots": [
+                        {
+                            "name": "MobileNumbers",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "number is {MobileNumbers}",
+                        "Mobile number {MobileNumbers}",
+                        "Mobile number is {MobileNumbers}"
+                    ]
+                },
+                {
+                    "name": "test",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "test {name}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
